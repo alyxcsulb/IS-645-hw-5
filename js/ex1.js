@@ -6,8 +6,8 @@ class Square {
     consturctor(side) {
         this.side = side;
         this.perimeter = this.side*4;
-        this.area = this.side^2;
-        this.diagonal = math.sqrt((2*this.side)^2)
+        this.area = this.side**2;
+        this.diagonal = Math.sqrt((2*(this.side)**2))
     }
 
 describe() {
@@ -21,18 +21,18 @@ const square_3 = new Square(6);
 
 square_1.side = 2
 square_1.perimeter = (square_1.side)*4
-square_1.area = (square_1.side)^2
-square_1.diagonal = math.sqrt((2*square_1.side)^2)
+square_1.area = (square_1.side)**2
+square_1.diagonal = Math.sqrt((2*(square_1.side)**2))
 
 square_2.side = 5
-square_2.perimeter = (square_1.side)*4
-square_2.area = (square_1.side)^2
-square_2.diagonal = math.sqrt((2*square_1.side)^2)
+square_2.perimeter = (square_2.side)*4
+square_2.area = (square_2.side)**2
+square_2.diagonal = Math.sqrt((2*(square_2.side)**2))
 
 square_3.side = 6
-square_3.perimeter = (square_1.side)*4
-square_3.area = (square_1.side)^2
-square_3.diagonal = math.sqrt((2*square_1.side)^2)
+square_3.perimeter = (square_3.side)*4
+square_3.area = (square_3.side)**2
+square_3.diagonal = Math.sqrt((2*(square_3.side)**2))
 
 console.log(square_1.describe());
 console.log(square_2.describe());
