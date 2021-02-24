@@ -33,7 +33,31 @@ const studentList = [
 ];
 // TO DO - Write higher order functions / There are many solutions
 
+const lastnameC = array => array.lastName[0].toLowerCase() === "c";
+
+function average_score(array) {
+    return array.reduce((sum, value) => sum + value, 0) / array.length;
+}
+
+const max_score = arr => arr.reduce(function(a,b) {
+    return Math.max(a,b)
+});
+
+const min_score = arr => arr.reduce(function(a,b) {
+    return Math.min(a,b)
+});
+
 //Declare cLastNameResults.  Use functions and map a new array of objects
+
+const cLastNameResults = studentList.filter(lastnameC).map(arr => {
+    return { 
+    firstname: arr.firstName,
+    lastname: arr.lastName,
+    min_score: min_score(arr.scores),
+    max_score: max_score(arr.scores),
+    average_score: average_score(arr.scores)
+    }
+})
 
 //Output
 console.log(cLastNameResults);
